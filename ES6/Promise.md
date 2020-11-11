@@ -92,6 +92,6 @@ function promiseAll(promises) {
 
 
 
-###`reject()`
+### `reject()`
 
 将对象转化为状态值为`rejected `的 `Promise`对象
