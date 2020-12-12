@@ -8,6 +8,13 @@ for (var i = 0; i < 3; i++) {
         console.log(i)//输出全为3
     }, 0)
 }
+// 相当于
+var i
+for (i = 0; i < 3; i++) {
+    setTimeout(() => {
+        console.log(i)//输出全为3
+    }, 0)
+}
 console.log(i)//输出为3
 ```
 

@@ -85,3 +85,21 @@
 ### 文件监听原理
 
 通过轮询判断文件的最后编辑时间是否变化，如果某个文件发生变化，不会立即告诉监听者，而是缓存起来，等`aggregatetime`后执行。
+
+
+
+### `fileName`与`chunkFileName`
+
+`fileName`是指列在`entry`中，打包后输出文件的名称
+
+`chunkFileName`是指未列在`entry`中，却又需要被打包出来的文件的名称
+
+
+
+### `hash`、`chunkHash`与`contentHash`
+
+`hash` 计算与整个项目的构建相关；
+
+`chunkhash` 计算与同一 `chunk` 内容相关；
+
+`contenthash` 计算与文件内容本身相关。

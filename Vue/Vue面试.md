@@ -152,3 +152,10 @@
 ### `data`为什么是函数
 
 `data`如果不是函数而是对象的话，会因为其他实例改变了`data`的数据而导致当前`data`数据的改变。而函数则不会有这种情况，这是因为`data`是对象的话，引用的是同一个内存地址。
+
+
+
+### `render`与`template`区别
+
+`render`性能比`template`性能更好，因为`template`会被编译成`AST`抽象语法树，在经过`generate`得到`render`函数。
+
